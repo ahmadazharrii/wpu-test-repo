@@ -15,10 +15,12 @@ img {
     width: 250px;
 }
 .navigation {
+    border: 1px solid white;
     text-align: right;
     width: 70%;
 }
 .logo_undercover{
+    border: 1px solid white;
     width: 30%;
 }
 div > a {
