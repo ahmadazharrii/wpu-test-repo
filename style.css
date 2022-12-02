@@ -1,29 +1,60 @@
 * {
     font-size: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: montserrat;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-nav {
-    display: flex;
-    height: 50px;
-    background-color: black;
-    padding: 10px;
-    border: 1px solid black;
-}
-img {
-    width: 160px;
-    height: auto;
-}
+
 .navigation {
-    text-align: right;
+    display: flex;
     width: 100%;
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
 }
-.logo_undercover{
-    width: 100%;
+.navigation img{
+    width: 180px;
+    cursor: pointer;
 }
-div > a {
+.nav_container ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav_container ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.nav_container ul li a:hover {
+    color: blue;
+    transition: .4s;
+}
+.btn_container ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+.btn1 {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-weight: 500;
+}
+.btn2 {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    background-color: blue;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.btn2:hover {
+    background-color: aliceblue;
+    color: black;
 }
