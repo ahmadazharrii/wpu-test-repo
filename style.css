@@ -6,55 +6,100 @@
     box-sizing: border-box;
 }
 
-.navigation {
+nav {
     display: flex;
-    width: 100%;
-    padding: 20px;
+    background-color:#000000;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: black;
-    align-items: center;
-    justify-content: space-between;
 }
-.navigation img{
-    width: 180px;
-    cursor: pointer;
-}
-.nav_container ul li {
+
+.nav_container ul{
+    display: flex;
     list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
+    gap: 2em;
 }
-.nav_container ul li a {
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
+
+.nav_container ul li a{
     text-decoration: none;
+    color: white;
 }
+
 .nav_container ul li a:hover {
-    color: blue;
-    transition: .4s;
+    color: #0479e0;
+    transition: 0.4s;
 }
-.btn_container ul li {
+
+.btn_container ul{
+    display: flex;
     list-style-type: none;
-    display: inline-block;
-    padding: 10px 10px;
+    gap: 2em;
 }
-.btn1 {
+
+.btn_container ul li a{
     text-decoration: none;
     color: white;
-    font-weight: 500;
 }
 .btn2 {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    background-color: blue;
-    border: 2px solid transparent;
+    background-color: #0055a6;
+    padding: 10px 20px 10px 20px;
     border-radius: 10px;
-    padding: 10px 20px;
 }
+
 .btn2:hover {
-    background-color: aliceblue;
-    color: black;
+    background-color: #0479e0;
+    transition: 0.4s;
+}
+
+/*Mobile Screen*/
+@media (min-width:320px) and (max-width:767px) {
+    .nav_container {
+        display: none;
+    }
+    .btn_container {
+        display: none;
+    }
+    .hamburger_menu{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+    }
+    .hamburger_menu span {
+        background-color: white;
+        padding: 2px 15px 2px 15px;
+        justify-content: space-between;
+    }
+    .logo_container img {
+        width: 140px;
+    }
+}
+/*Tablet Screen*/
+@media (min-width:768px) and (max-width:1024px) {
+    .nav_container {
+        display: none;
+    }
+    .btn_container {
+        display: none;
+    }
+    .hamburger_menu{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3em;
+    }
+    .hamburger_menu span {
+        background-color: white;
+        padding: 2px 15px 2px 15px;
+        justify-content: space-between;
+    }
+}
+/*Laptop Screen*/
+@media (min-width:1025px) {
+    .hamburger_menu {
+        display: none;
+    }
 }
